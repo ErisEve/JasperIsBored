@@ -1,0 +1,24 @@
+{
+  "name": "jasperisbored",
+  "version": "1.0.0",
+  "description": "mina's adhd is getting worse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MinaN",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.33.5",
+    "discord.js": "^13.8.0",
+    "discord.js-commando": "^0.12.3",
+    "dotenv": "^16.0.1",
+    "file-api": "^0.10.4",
+    "mime": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0"
+  }
+}
