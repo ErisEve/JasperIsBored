@@ -1,0 +1,21 @@
+**Calendar**
+
+It is currently the year 796 e.o.p (shortly: eop). Eop stands for “era of peace”.
+
+There are 12 main constellations which are tied to a month of the year, and also to a year in a 12-year repeating cycle. The year begins with the Scepter in spring and ends with the Maiden in winter. Every month has 30 days, so a year has 360 days total. 
+
+Constellations and their attributes:
+01. S **Scepter** - modest, practical, reliable, traditional, overcritical, conservative 
+02. S **Trickster** - witty, shrewd, adaptable, unpredictable, opportunist, misguided
+03. S **Scythe** - hard-working, honest, determined, tactless, intolerant, harsh
+04. L **Amulet** - enthusiastic, confident, good-humored, selfish, greedy, superficial
+05. L **Wishbone** - adventurous, courageous, pioneering, impulsive, daredevil, reckless 
+06. L **Lyre** - creative, passionate, magnetic, overemotional, egotistic, obsessive
+07. A **Guardian** - protective, loyal, brave, possessive, paranoid, overly cautious
+08. A **Vermin** - diligent, persistent, intuitive, controlling, bossy, restless
+09. A **Serpent** - knowledgeable, wise, broad-minded, secretive, detached, cold
+10. W **Ouroboros** - ambitious, intense, strong-willed, competitive, envious, patronizing
+11. W **Astronomer** - calm, social, diplomatic, idealistic, too selfless, people-pleasing
+12. W **Maiden** - empathetic, sensitive, caring, angsty, pessimistic, revengeful
+
+S - spring; L - summer; A - autumn; W - winter

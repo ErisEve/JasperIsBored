@@ -17,11 +17,17 @@ for (const file of commandFiles) {
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('infooptions')
-		.setDescription('I give you a list of all info about random people or concepts in BP that I have stored'),
+		.setDescription('I give you a list of all info about random people or concepts in BP and BD that I have stored'),
 	async execute(interaction) {
         var output = "My /info command has these possible inputs:\n";
-        commands.forEach(element => {
-            output+=element+', ';
+        output+="**Gods of Ruin**\n";
+        commands.filter(word =>  word.slice(-2) == 'BP').forEach(element => {
+            output+=element.replace('BP','')+'    ';
+        });
+        output+="\n";
+        output+="**Blood Dispute**\n";
+        commands.filter(word =>  word.slice(-2) == 'BD').forEach(element => {
+            output+=element.replace('BD','')+'    ';
         });
 		await interaction.reply(output);
 	},

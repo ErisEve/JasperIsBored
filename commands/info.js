@@ -14,18 +14,34 @@ module.exports = {
 				.setRequired(true)),
 	async execute(interaction) {
 		const string = interaction.options.getString('input');
-		const file = new File('./info/'+string+'.txt');
 		const fs = require('fs');
-		if(!fs.existsSync('./info/'+string+'.txt')){
+		if(!fs.existsSync('./info/'+string+'BP.txt') && !fs.existsSync('./info/'+string+'BD.txt')){
 			interaction.reply("Podaci o tome jos nisu ubaceni. (Proveri da li si pravilno napisala - bez velikih slova, bez č,š i tako tih slova.)");
 		}else{
-			const reader = new FileReader();
-			reader.onload = function(){
-				output = reader.result;
-				console.log(output);
-				interaction.reply({content: output, ephemeral:false});
+			if(fs.existsSync('./info/'+string+'BP.txt')) {
+				const file = new File('./info/'+string+'BP.txt');
+				const reader = new FileReader();
+				reader.onload = function(){
+					output = reader.result;
+					interaction.reply({content: output, ephemeral:false});
+				}
+				await reader.readAsText(file);
 			}
-			await reader.readAsText(file);
+			if(fs.existsSync('./info/'+string+'BD.txt')) {
+				const file = new File('./info/'+string+'BD.txt');
+				const reader = new FileReader();
+				reader.onload = function(){
+					output = reader.result;
+					interaction.reply({content: output, ephemeral:false});
+				}
+				await reader.readAsText(file);
+			}
+			// const reader = new FileReader();
+			// reader.onload = function(){
+			// 	output = reader.result;
+			// 	interaction.reply({content: output, ephemeral:false});
+			// }
+			// await reader.readAsText(file);
 		}
 	},
 };
