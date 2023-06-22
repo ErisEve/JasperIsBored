@@ -20,15 +20,15 @@ module.exports = {
 		.setDescription('I give you a list of all info about random people or concepts in BP and BD that I have stored'),
 	async execute(interaction) {
         var output = "My /info command has these possible inputs:\n";
-        output+="**Gods of Ruin**\n";
-        commands.filter(word =>  word.slice(-2) == 'BP').forEach(element => {
-            output+=element.replace('BP','')+'    ';
-        });
-        output+="\n";
         output+="**Blood Dispute**\n";
         commands.filter(word =>  word.slice(-2) == 'BD').forEach(element => {
-            output+=element.replace('BD','')+'    ';
+            output+=element.replace('BD','')+'  ~  ';
         });
-		await interaction.reply(output);
+        output+="\n";
+		output+="**Gods of Ruin**\n";
+        commands.filter(word =>  word.slice(-2) == 'BP').forEach(element => {
+            output+=element.replace('BP','')+'  ~  ';
+        });
+        await interaction.reply(output);
 	},
 };
