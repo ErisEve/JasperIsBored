@@ -23,6 +23,7 @@ module.exports = {
 				const reader = new FileReader();
 				reader.onload = function(){
 					output = reader.result;
+					console.log(output);
 					interaction.reply({content: output, ephemeral:false});
 				}
 				await reader.readAsText(file);
@@ -32,6 +33,7 @@ module.exports = {
 				const reader = new FileReader();
 				reader.onload = function(){
 					output = reader.result;
+					console.log(output);
 					interaction.reply({content: output, ephemeral:false});
 				}
 				await reader.readAsText(file);

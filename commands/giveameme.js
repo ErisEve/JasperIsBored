@@ -43,8 +43,10 @@ module.exports = {
 		const embedded = new MessageEmbed()
 			.setTitle("Here you go.")
 			// .setImage('img-memes/aitijabelike.png')
-		const file = new MessageAttachment('./img-memes/'+memes[Math.floor(Math.random()*memes.length)]);
+		const str = './img-memes/'+memes[Math.floor(Math.random()*memes.length)]
+		const file = new MessageAttachment(str);
 		// const imagecook = new MessageAttachment('./img-memes/aitijabelike.png', 'aitijabelike.png');
+		console.log(str);
         await interaction.reply({embeds: [embedded],files:[file]});
 	},
 };
